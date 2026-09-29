@@ -11,7 +11,6 @@ pipeline {
         stage('Test') {
             steps {
                 echo 'Testing application...'
-                sh 'exit 1'
             }
         }
 
