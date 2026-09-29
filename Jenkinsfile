@@ -4,19 +4,20 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                echo 'Building from Jenkinsfile...'
+                echo 'Building application...'
             }
         }
 
         stage('Test') {
             steps {
-                echo 'Testing from Jenkinsfile...'
+                echo 'Testing application...'
+                sh 'exit 1'
             }
         }
 
         stage('Deploy') {
             steps {
-                echo 'Deploying from Jenkinsfile...'
+                echo 'Deploying application...'
             }
         }
     }
